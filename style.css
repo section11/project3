@@ -135,6 +135,7 @@ nav a {
   padding-top: 0.611em; /* 11 / 18 = 0.611 */
   padding-bottom: 0.611em; /* 11 / 18 = 0.611 */
   background-color: #7A9D96;
+	color: #0C374D;
   text-align: center;
   text-decoration: none;
 }
@@ -145,6 +146,7 @@ nav a:visited {
 
 .active{
 	font-weight: bold;
+	text-decoration: underline;
 }
 
 /* State */
