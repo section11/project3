@@ -98,7 +98,7 @@ ol {
 li > ul,
 li > ol {
   padding-top:  0.611em; /* 11 / 18 = 0.611 */
-  padding-left: 1.8333em; /* 22 / 18 = 1.222 */
+  padding-left: 1.8333em; /* 33 / 18 = 1.222 */
   padding-bottom: 0;
 }
 li li:last-child {
@@ -114,6 +114,38 @@ figcaption{
 	font-size: 0.77em; /* 14 / 18 = 0.77 */
 }
 
+/* Layout */
+#navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#navigation li {
+  width: 33.333333%;
+  float: left;
+}
+
+/* Modular */
+nav ul {
+  list-style-type: none;
+}
+nav a {
+  display: block;
+  padding-top: 0.611em; /* 11 / 18 = 0.611 */
+  padding-bottom: 0.611em; /* 11 / 18 = 0.611 */
+  background-color: #7A9D96;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:visited {
+	text-decoration: none;
+}
+
+.active{
+	font-weight: bold;
+}
 
 /* State */
 @media screen and (min-width: 370px) {
