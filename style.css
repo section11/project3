@@ -61,12 +61,13 @@ html{
 
 body {
   padding-top: 2.0em; /* 36 / 18 = 2.444 */
-  padding-right: 1em; /* 22 / 18 = 1.222 */
-  padding-left: 1em; /* 22 / 18 = 1.222 */
+  padding-right: 1em; /* 18 / 18 = 1 */
+  padding-left: 1em; /* 18 / 18 = 1 */
 }
 
 h1,h2,h3,p {
   padding-bottom: 1.222em;
+	padding-top: 0.563em; /* 10.13 / 18 = 0.563*/
 }
 h1 {
   color: #222222;
@@ -98,7 +99,7 @@ ol {
 li > ul,
 li > ol {
   padding-top:  0.611em; /* 11 / 18 = 0.611 */
-  padding-left: 1.8333em; /* 33 / 18 = 1.222 */
+	padding-left: 1.8333em; /* 33 / 18 = 1.222 */
   padding-bottom: 0;
 }
 li li:last-child {
@@ -161,16 +162,21 @@ nav a:visited {
     font-size: 1.25em; /* 20 / 16 = 1.25 */
   }
 
-	#main, #secondary, #third{
+	#first, #secondary, #third{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
 	}
-	#main > p{
-		flex-basis: 30%;
+	#first > p{
+		flex-basis: 35%;
 	}
 	#secondary > p{
-		flex-basis: 40%;
+		flex-basis: 30%;
+	}
+	#secondary > ul{
+		flex-basis: 20%;
+		position: relative;
+		left: 1em;
 	}
 	#secondary figure{
 		flex-basis: 25%;
@@ -185,6 +191,11 @@ nav a:visited {
 	#secondary > p{
 		flex-basis: 35%;
 	}
+	#secondary > ul{
+		flex-basis: 25%;
+		position: relative;
+		left: 1em;
+	}
 	#secondary figure{
 		flex-basis: 25%;
 	}
@@ -194,17 +205,22 @@ nav a:visited {
   body {
 
   }
-	#main, #secondary, #third{
+	#first, #secondary, #third{
 		display: flex;
 	}
-	#main > p{
+	#first > p{
 		flex-basis: 33%;
 	}
 	#secondary > p{
-		flex-basis: 30%;
+		flex-basis: 35%;
+	}
+	#secondary > ul{
+		flex-basis: 25%;
+		position: relative;
+		left: 1em;
 	}
 	#secondary figure{
-		flex-basis: 25%;
+		flex-basis: 40%;
 	}
 }
 @media screen and (min-width: 1185px) {
