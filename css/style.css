@@ -111,6 +111,13 @@ img {
  height: auto;
 }
 
+#values li{
+	transition: font-size 0.5s ease;
+}
+
+#values li:hover{
+	font-size: 1.777em;
+}
 figcaption{
 	font-size: 0.77em; /* 14 / 18 = 0.77 */
 }
