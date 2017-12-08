@@ -121,6 +121,23 @@ img {
 #values li:hover{
 	font-size: 1.777em;
 }
+
+#images-gallery{
+	transition: all 0.5s linear;
+}
+
+#images-gallery:active{
+	width: 130%;
+	height: 130%;
+	position: relative;
+
+}
+#images-gallery:hover{
+	width: 130%;
+	height: 130%;
+	position: relative;
+
+}
 figcaption{
 	font-size: 0.77em; /* 14 / 18 = 0.77 */
 }
@@ -172,7 +189,7 @@ nav a:visited {
     font-size: 1.25em; /* 20 / 16 = 1.25 */
   }
 
-	#first, #secondary, #third{
+	#first, #secondary, #third, #images{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -190,6 +207,9 @@ nav a:visited {
 	}
 	#secondary figure{
 		flex-basis: 25%;
+	}
+	#images > figure {
+		flex-basis: 30%;
 	}
 }
 
