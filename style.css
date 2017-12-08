@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Begin site styles below */
+html{
+  font-size: 1.125em; /* 18 / 16 = 1.125 */
+  line-height: 1.222em; /* 22 / 18 = 1.222 */
+  text-rendering: optimizeLegibility;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  background-color: #ebedf3;
+}
+
+body {
+  padding-top: 2.0em; /* 36 / 18 = 2.444 */
+  padding-right: 1em; /* 22 / 18 = 1.222 */
+  padding-left: 1em; /* 22 / 18 = 1.222 */
+}
+
+h1,h2,h3,p {
+  padding-bottom: 1.222em;
+}
+h1 {
+  color: #222222;
+}
+h2 {
+  font-size: 1.777em; /* 31.984 / 18 = 1.777 */
+  line-height: 1.0318em; /* 33 / 31.984 = 1.0318 */
+  padding-bottom: 0.689em; /* 22 / 31.984 = 0.689 */
+}
+h3 {
+  font-weight: bold;
+  padding-top: 1.222em; /* 22 / 18 = 1.222 */
+  padding-bottom: 0.611em; /* 11 / 18 = 0.611 */
+}
+
+li {
+  padding-bottom: 0.611em; /* 11 / 18 = 0.611 */
+}
+ul,ol {
+  padding-bottom: 0.611em; /* 11 / 18 = 0.611 */
+  color: #f86e76;
+}
+ul {
+  list-style-type: circle;
+}
+ol {
+  list-style-type: decimal;
+}
+li > ul,
+li > ol {
+  padding-top:  0.611em; /* 11 / 18 = 0.611 */
+  padding-left: 1.8333em; /* 22 / 18 = 1.222 */
+  padding-bottom: 0;
+}
+li li:last-child {
+  padding-bottom: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption{
+	font-size: 0.77em; /* 14 / 18 = 0.77 */
+}
+
+
+/* State */
+@media screen and (min-width: 370px) {
+  body {
+    padding-right: 5.9459459%; /* 22 / 370 = 0.059459459 */
+    padding-left: 5.9459459%; /* 22 / 370 = 0.059459459 */
+  }
+}
+@media screen and (min-width: 625px) {
+  html {
+    font-size: 1.25em; /* 20 / 16 = 1.25 */
+  }
+
+	#main, #secondary, #third{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	#main > p{
+		flex-basis: 30%;
+	}
+	#secondary > p{
+		flex-basis: 40%;
+	}
+	#secondary figure{
+		flex-basis: 25%;
+	}
+}
+
+@media screen and (min-width: 720px) {
+  body {
+    padding-right: 11.1111111%; /* 80 / 720 = 0.111111111 */
+    padding-left: 11.1111111%; /* 80 / 720 = 0.111111111 */
+  }
+	#secondary > p{
+		flex-basis: 35%;
+	}
+	#secondary figure{
+		flex-basis: 25%;
+	}
+}
+
+@media screen and (min-width: 800px) {
+  body {
+
+  }
+	#main, #secondary, #third{
+		display: flex;
+	}
+	#main > p{
+		flex-basis: 33%;
+	}
+	#secondary > p{
+		flex-basis: 30%;
+	}
+	#secondary figure{
+		flex-basis: 25%;
+	}
+}
+@media screen and (min-width: 1185px) {
+  body {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
