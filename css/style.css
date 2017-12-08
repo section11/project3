@@ -115,6 +115,9 @@ img {
 	transition: font-size 0.5s ease;
 }
 
+#values li:active{
+	font-size: 1.777em;
+}
 #values li:hover{
 	font-size: 1.777em;
 }
